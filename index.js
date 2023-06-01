@@ -13,7 +13,7 @@ const orderRoute = require('./routes/order');
 dotenv.config();
 
 mongoose
-    .connect(process.env.MONGO_URL)
+    .connect("mongodb+srv://anton:123shop456@cluster0.ic6z9kj.mongodb.net/eshop?retryWrites=true&w=majority")
     .then(() => console.log('MongoDB connected'))
     .catch((err) => { console.log(err) });
 
